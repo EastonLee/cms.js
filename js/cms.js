@@ -27,7 +27,7 @@ var CMS = {
     mainContainer: $(document.getElementsByClassName('cms_main')),
     footerContainer: $(document.getElementsByClassName('cms_footer')),
     footerText: '&copy; ' + new Date().getFullYear() + ' All Rights Reserved.',
-    parseSeperator: '---',
+    parseSeperator: /^---([\s\S]+?)---/,
     postsOnFrontpage: true,
     pageAsFrontpage: '',
     postsOnUrl: '',
@@ -200,15 +200,12 @@ var CMS = {
   },
 
   parseContent: function (content, type, file, counter, numFiles) {
-
     var data = content.split(CMS.settings.parseSeperator),
       contentObj = {},
       id = counter,
       date = file.date;
-
     contentObj.id = id;
     contentObj.date = date;
-
     // Get content info
     var infoData = data[1].split(/[\n\r]+/);
 

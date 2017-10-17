@@ -2,6 +2,19 @@
 layout: post
 title: Example post
 ---
+## Table test
+
+Colons can be used to align columns.
+
+Markdown | Less | Pretty
+--- | --- | ---
+*Still* | `renders` | **nicely**
+1 | 2 | 3
+
+
+## MathJax test
+
+$$E=mc^2$$
 
 Ham pig alcatra biltong. Ball tip meatloaf andouille pork, [corned beef](#) tenderloin alcatra bresaola *bacon* fatback spare ribs pig tail meatball turkey.
 Ball tip bresaola biltong turkey andouille picanha, fatback capicola ham hock tenderloin rump.
